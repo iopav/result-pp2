@@ -1,0 +1,192 @@
+{
+  "schema": "pp2-joint-learning-v2",
+  "exp_name": "uwave-5method",
+  "dataset": "uwave",
+  "method": "fecam",
+  "order": 1,
+  "seed": 63,
+  "backbone": "resnet18_cifar",
+  "best_lr": 0.1,
+  "status": "completed",
+  "started_at": "2026-09-06T13:20:26+02:00",
+  "finished_at": "2026-09-06T13:26:47+02:00",
+  "config": {
+    "source_search_json": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/fecam/order1/order1_seed063_search.json",
+    "optimizer": "SGD",
+    "learning_rate": 0.1,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "foreach": false,
+    "train_mb_size": 64,
+    "eval_mb_size": 128,
+    "num_workers": 0,
+    "epochs": 20,
+    "training_scope": "stage k uses the cumulative train data from ordered tasks 1..k",
+    "strategy": "one from-scratch ordinary backbone and seen-class linear head per stage",
+    "reference_accuracy": "lower-triangular matrix; intransigence uses its diagonal",
+    "data_role": "formal"
+  },
+  "tasks": 6,
+  "task_groups": [
+    [
+      0,
+      1,
+      5
+    ],
+    [
+      4
+    ],
+    [
+      7
+    ],
+    [
+      6
+    ],
+    [
+      3
+    ],
+    [
+      2
+    ]
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      0.9648093841642229,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.9501466275659824,
+      0.984251968503937,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.9530791788856305,
+      0.984251968503937,
+      0.98,
+      null,
+      null,
+      null
+    ],
+    [
+      0.9794721407624634,
+      1.0,
+      0.97,
+      0.9642857142857143,
+      null,
+      null
+    ],
+    [
+      0.9354838709677419,
+      0.9606299212598425,
+      1.0,
+      1.0,
+      0.9727272727272728,
+      null
+    ],
+    [
+      0.9530791788856305,
+      0.984251968503937,
+      1.0,
+      1.0,
+      0.9727272727272728,
+      1.0
+    ]
+  ],
+  "accuracy_by_task": [
+    0.9648093841642229,
+    0.984251968503937,
+    0.98,
+    0.9642857142857143,
+    0.9727272727272728,
+    1.0
+  ],
+  "stage_final_epoch_train_loss": [
+    0.00682027732900529,
+    0.03657936584151848,
+    0.05100856472269295,
+    0.038011291415567625,
+    0.01398248654192366,
+    0.022759912907349238
+  ],
+  "train_samples_by_stage": [
+    1338,
+    1771,
+    2231,
+    2678,
+    3128,
+    3582
+  ],
+  "final_epoch_train_loss": 0.022759912907349238,
+  "training_runtime": {
+    "total_s": 380.2270394809311,
+    "total_gpu_ms": 381323.875
+  },
+  "training_operations": {
+    "task_summed_terminal_flops_per_sample": 20068392918.36144,
+    "overall_learning_flops": 985224434710458,
+    "core_training_flops": 985224434710458,
+    "learning_auxiliary_flops": 0,
+    "single_sample_forward_flops": 1113554952,
+    "auxiliary_nonflop_ops": {
+      "explicit_nonflop_operator_calls": {
+        "aten._local_scalar_dense": 4860,
+        "aten._pin_memory": 13860,
+        "aten._to_copy": 9240,
+        "aten.clone": 372,
+        "aten.detach": 457752,
+        "aten.empty": 240,
+        "aten.expand": 4620,
+        "aten.is_pinned": 13860,
+        "aten.lift_fresh": 303800,
+        "aten.ones_like": 4620,
+        "aten.random_": 240,
+        "aten.randperm": 240,
+        "aten.relu": 78540,
+        "aten.stack": 4620,
+        "aten.t": 23100,
+        "aten.threshold_backward": 78540,
+        "aten.view": 13860,
+        "profiler._record_function_enter_new": 13980,
+        "profiler._record_function_exit": 13980
+      },
+      "manual_nonflop_operations": [],
+      "total_recorded_events": 1040324,
+      "policy": "Only comparisons, indexing, shape/view, data movement, integer/bit operations and other explicitly documented non-floating-point operations are listed here; unknown computational operators still abort the run."
+    },
+    "single_forward_detail": {
+      "flops": 1113554952,
+      "operation_calls": {
+        "single_sample_forward": {
+          "aten.convolution": 20,
+          "aten.cudnn_batch_norm": 20,
+          "aten.relu": 17,
+          "aten.add": 8,
+          "aten.mean": 1,
+          "aten.view": 1,
+          "aten.t": 1,
+          "aten.addmm": 1
+        }
+      }
+    }
+  },
+  "persistent_storage": {
+    "model_parameter_bytes": 44691744,
+    "model_buffer_bytes": 38560,
+    "optimizer_state_bytes": 44691744,
+    "total_bytes": 89422048,
+    "total_mib": 85.27951049804688
+  },
+  "inference": {
+    "final_latency_ms_per_sample": 0.04082990173109075
+  },
+  "working_memory_diagnostic": {
+    "native_peak_allocated_gpu_memory_mib": 500.25
+  }
+}

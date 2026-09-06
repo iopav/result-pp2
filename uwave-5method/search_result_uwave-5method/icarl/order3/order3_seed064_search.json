@@ -1,0 +1,54 @@
+{
+  "schema": "pp2-order-seed-search-v1",
+  "exp_name": "uwave-5method",
+  "dataset": "uwave",
+  "method": "icarl",
+  "order": 3,
+  "seed": 64,
+  "backbone": "resnet18_cifar",
+  "loss_selection": "last_epoch_train_mean",
+  "lr_candidates": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "candidates": {
+    "0.1": {
+      "status": "completed",
+      "selection_loss": 0.09586627773429159,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 1135593679151859,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr01/search_uwave_icarl__order-3__lr-01__seed-064__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr01/search_uwave_icarl__order-3__lr-01__seed-064__accuracy-matrix.json"
+    },
+    "0.05": {
+      "status": "completed",
+      "selection_loss": 0.09083864363534334,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 1135593679151859,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr005/search_uwave_icarl__order-3__lr-005__seed-064__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr005/search_uwave_icarl__order-3__lr-005__seed-064__accuracy-matrix.json"
+    },
+    "0.01": {
+      "status": "completed",
+      "selection_loss": 0.08794474395958916,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 1135593679151859,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr001/search_uwave_icarl__order-3__lr-001__seed-064__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr001/search_uwave_icarl__order-3__lr-001__seed-064__accuracy-matrix.json"
+    }
+  },
+  "best_lr": 0.01,
+  "best_loss": 0.08794474395958916,
+  "best_checkpoint": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/checkpoint/uwave__icarl__order-3__seed-064__lr-001__best.pt",
+  "best_summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr001/search_uwave_icarl__order-3__lr-001__seed-064__summary.json",
+  "best_accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-5method/icarl/order3/lr001/search_uwave_icarl__order-3__lr-001__seed-064__accuracy-matrix.json",
+  "total_search_flops": 3406781037455577,
+  "storage_bytes": 44691744,
+  "status": "completed",
+  "started_at": "2026-09-06T16:50:39+02:00",
+  "finished_at": "2026-09-06T17:13:23+02:00"
+}

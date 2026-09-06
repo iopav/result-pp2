@@ -1,0 +1,71 @@
+{
+  "dataset": "uwave",
+  "method": "fecam",
+  "backbone_id": "resnet18_cifar",
+  "input_view_id": "uwave_stored_rgb_image_v1",
+  "order_id": 1,
+  "seed": 66,
+  "exp_name": "uwave-5method",
+  "data_role": "formal",
+  "tasks": 6,
+  "orientation": "row=train experience end; column=evaluated test experience",
+  "upper_triangle": "null because the corresponding class experience had not been learned yet",
+  "test_samples_per_task": [
+    341,
+    127,
+    100,
+    112,
+    110,
+    106
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      0.9413489736070382,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.8856304985337243,
+      0.9763779527559056,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.8797653958944281,
+      0.9763779527559056,
+      0.79,
+      null,
+      null,
+      null
+    ],
+    [
+      0.8680351906158358,
+      0.9448818897637795,
+      0.75,
+      0.5357142857142857,
+      null,
+      null
+    ],
+    [
+      0.8504398826979472,
+      0.84251968503937,
+      0.68,
+      0.5357142857142857,
+      0.6636363636363637,
+      null
+    ],
+    [
+      0.7683284457478006,
+      0.8346456692913385,
+      0.68,
+      0.5178571428571429,
+      0.6545454545454545,
+      0.6792452830188679
+    ]
+  ]
+}

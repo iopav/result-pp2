@@ -1,0 +1,71 @@
+{
+  "dataset": "uwave",
+  "method": "cwr_star",
+  "backbone_id": "resnet18_cifar",
+  "input_view_id": "uwave_stored_rgb_image_v1",
+  "order_id": 3,
+  "seed": 66,
+  "exp_name": "uwave-5method",
+  "data_role": "formal",
+  "tasks": 6,
+  "orientation": "row=train experience end; column=evaluated test experience",
+  "upper_triangle": "null because the corresponding class experience had not been learned yet",
+  "test_samples_per_task": [
+    324,
+    111,
+    100,
+    112,
+    122,
+    127
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      0.9814814814814815,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.3271604938271605,
+      1.0,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.30246913580246915,
+      0.4144144144144144,
+      0.98,
+      null,
+      null,
+      null
+    ],
+    [
+      0.2932098765432099,
+      0.0,
+      0.52,
+      1.0,
+      null,
+      null
+    ],
+    [
+      0.2932098765432099,
+      0.0,
+      0.28,
+      0.5446428571428571,
+      0.9672131147540983,
+      null
+    ],
+    [
+      0.2932098765432099,
+      0.0,
+      0.0,
+      0.5625,
+      0.9262295081967213,
+      0.8818897637795275
+    ]
+  ]
+}
