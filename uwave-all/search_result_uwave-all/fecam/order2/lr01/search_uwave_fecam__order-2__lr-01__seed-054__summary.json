@@ -1,0 +1,404 @@
+{
+  "exp_name": "uwave-all",
+  "method": "FeCAM",
+  "seed": 54,
+  "tasks": 6,
+  "cil_performance": {
+    "average_incremental_accuracy": 0.8684197431632573,
+    "final_average_accuracy": 0.8035714285714286,
+    "average_forgetting": 0.035640666971675006,
+    "mean_final_accuracy_loss": 0.035640666971675006,
+    "backward_transfer": -0.035640666971675006,
+    "worst_forgotten_task": 1,
+    "forgetting_mean": 0.035640666971675006,
+    "forgetting_median": 0.016393442622950838,
+    "forgetting_std": 0.03592502387144367,
+    "forgetting_min": 0.0,
+    "forgetting_q25": 0.010000000000000009,
+    "forgetting_q75": 0.054545454545454564,
+    "forgetting_max": 0.09726443768996962,
+    "forgetting_positive_fraction": 0.8,
+    "task_end_seen_accuracy_curve": [
+      0.9696048632218845,
+      0.8647450110864745,
+      0.8548094373865699,
+      0.8725341426403642,
+      0.8452535760728218,
+      0.8035714285714286
+    ],
+    "forgetting_per_task": [
+      0.09726443768996962,
+      0.016393442622950838,
+      0.010000000000000009,
+      0.0,
+      0.054545454545454564
+    ],
+    "intransigence": [
+      0.003039513677811523,
+      0.20491803278688525,
+      0.13,
+      0.02777777777777779,
+      0.21818181818181825,
+      0.3779527559055118
+    ],
+    "intransigence_mean": 0.16031164972163411
+  },
+  "network": {
+    "final_hidden_neurons": 512,
+    "total_new_neurons": 0,
+    "total_reused_neurons": null
+  },
+  "training_runtime": {
+    "total_s": 37.71081146004144,
+    "total_gpu_ms": 37713.271224975586,
+    "initial_task_s": 36.811473857960664,
+    "incremental_tasks_total_s": 0.8993376020807773,
+    "mean_incremental_task_s": 0.17986752041615545,
+    "median_incremental_task_s": 0.18188367201946676
+  },
+  "training_operations": {
+    "task_summed_terminal_flops_per_sample": 10029270448.250881,
+    "overall_learning_flops": 94299270900194,
+    "core_training_flops": 90308620977618,
+    "learning_auxiliary_flops": 3990649922576,
+    "single_sample_forward_flops": 10423540400,
+    "auxiliary_nonflop_ops": {
+      "explicit_nonflop_operator_calls": {
+        "aten._local_scalar_dense": 486,
+        "aten._pin_memory": 1320,
+        "aten._to_copy": 1627,
+        "aten._unique2": 12,
+        "aten.as_strided": 16,
+        "aten.cat": 12,
+        "aten.clone": 160,
+        "aten.copy_": 84,
+        "aten.detach": 43634,
+        "aten.diagonal": 24,
+        "aten.empty": 58,
+        "aten.eq": 16,
+        "aten.equal": 8,
+        "aten.expand": 440,
+        "aten.eye": 16,
+        "aten.fill_": 16,
+        "aten.index": 16,
+        "aten.index_put_": 6,
+        "aten.is_pinned": 1320,
+        "aten.le": 8,
+        "aten.lift_fresh": 31594,
+        "aten.logical_not": 440,
+        "aten.masked_fill": 880,
+        "aten.ne": 16,
+        "aten.new_ones": 8,
+        "aten.ones_like": 440,
+        "aten.permute": 8,
+        "aten.random_": 46,
+        "aten.randperm": 40,
+        "aten.relu": 8500,
+        "aten.scalar_tensor": 16,
+        "aten.select": 66,
+        "aten.slice": 18,
+        "aten.squeeze": 8,
+        "aten.stack": 500,
+        "aten.t": 2208,
+        "aten.threshold_backward": 7480,
+        "aten.uniform_": 12,
+        "aten.unsqueeze": 24,
+        "aten.view": 1380,
+        "aten.zeros": 464,
+        "profiler._record_function_enter_new": 1406,
+        "profiler._record_function_exit": 1406
+      },
+      "manual_nonflop_operations": [],
+      "total_recorded_events": 106239,
+      "policy": "Only comparisons, indexing, shape/view, data movement, integer/bit operations and other explicitly documented non-floating-point operations are listed here; unknown computational operators still abort the run."
+    }
+  },
+  "persistent_storage": {
+    "model_parameter_bytes": 44691744,
+    "replay_sample_bytes": 0,
+    "replay_label_bytes": 0,
+    "auxiliary_bytes": 53118888,
+    "total_bytes": 97810632,
+    "total_mib": 93.27948760986328,
+    "pulse_encoding": "NA",
+    "label_encoding": "NA"
+  },
+  "inference": {
+    "final_latency_ms_per_sample": 1.5470959842787124
+  },
+  "working_memory_diagnostic": {
+    "native_peak_allocated_gpu_memory_mib": 478.95263671875,
+    "note": "Transient working memory; excluded from persistent storage."
+  },
+  "selection": {
+    "mode": "last_epoch_train_mean",
+    "loss": 1.8989258517293952,
+    "loss_eval_flops": 521634410918
+  },
+  "config": {
+    "schema": "metrics1.docx-compatible-avalanche-cil-v2",
+    "dataset": {
+      "name": "uwave",
+      "train_x": "uwave/X_train_uwave.npy",
+      "train_y": "uwave/Y_train_uwave.npy",
+      "test_x": "uwave/X_test_uwave.npy",
+      "test_y": "uwave/Y_test_uwave.npy",
+      "train_shape": [
+        3582,
+        315,
+        3
+      ],
+      "test_shape": [
+        896,
+        315,
+        3
+      ],
+      "source_x_dtype": "float32",
+      "num_classes": 8,
+      "timesteps": 315,
+      "in_channels": 3,
+      "image_train_x": "uwave/X_train_uwave_img.npy",
+      "image_train_y": "uwave/Y_train_uwave_img.npy",
+      "image_test_x": "uwave/X_test_uwave_img.npy",
+      "image_test_y": "uwave/Y_test_uwave_img.npy",
+      "image_train_shape": [
+        3582,
+        32,
+        32,
+        3
+      ],
+      "image_test_shape": [
+        896,
+        32,
+        32,
+        3
+      ],
+      "image_x_dtype": "float32",
+      "image_layout": "NHWC"
+    },
+    "method": "fecam",
+    "method_parameters": {
+      "display_name": "FeCAM",
+      "backbone_training": "first_experience_only_then_frozen",
+      "later_experience_update": "class_means_and_covariances_only_no_sgd",
+      "tukey": false,
+      "shrinkage": true,
+      "shrink1": 1.0,
+      "shrink2": 1.0,
+      "covnorm": true,
+      "source": "FeCAM classifier-incremental protocol; Avalanche classifier defaults except tukey disabled for signed shared features"
+    },
+    "backbone": {
+      "backbone_id": "resnet18_cifar",
+      "feature_dim": 512,
+      "feature_dim_per_branch": null,
+      "base_width": 64,
+      "stage_channels": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "pretrained": false,
+      "status": "registered_shared_backbone"
+    },
+    "training": {
+      "optimizer": "SGD",
+      "learning_rate": 0.1,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "foreach": false,
+      "train_mb_size": 64,
+      "eval_mb_size": 128,
+      "num_workers": 0,
+      "requested_epochs_per_experience": 20,
+      "effective_sgd_epochs_per_experience": [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fecam_later_experience_loop": "one frozen-feature class-statistics pass"
+    },
+    "protocol": {
+      "augmentation": "none",
+      "normalization": "none",
+      "input_view_id": "uwave_stored_rgb_image_v1",
+      "technical_input_conversion": "stored RGB float32 image view",
+      "classes_per_experience": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "replay_budget_cap_samples": 2000,
+      "spike_replay_persistence": null,
+      "spike_replay_label_persistence": null,
+      "flop_backend": "torch.utils.flop_counter.FlopCounterMode",
+      "flop_convention": "1 MAC = 2 FLOPs; no post-hoc doubling of PyTorch 2.11 totals",
+      "tagfex_two_view_policy": null
+    },
+    "order_registry_source": "cil_experiments/order_seed_registry.py",
+    "selected_task_groups": [
+      [
+        5,
+        2,
+        6
+      ],
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        1
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ]
+    ],
+    "dataset_orders": {
+      "1": [
+        [
+          4,
+          0,
+          3
+        ],
+        [
+          6
+        ],
+        [
+          5
+        ],
+        [
+          2
+        ],
+        [
+          7
+        ],
+        [
+          1
+        ]
+      ],
+      "2": [
+        [
+          5,
+          2,
+          6
+        ],
+        [
+          0
+        ],
+        [
+          7
+        ],
+        [
+          1
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "3": [
+        [
+          2,
+          6,
+          0
+        ],
+        [
+          4
+        ],
+        [
+          7
+        ],
+        [
+          5
+        ],
+        [
+          3
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "seeds": [
+      48,
+      50,
+      52,
+      54,
+      56
+    ],
+    "final_hyperparameters": {
+      "source": "cil_experiments/final_hyperparameters.py",
+      "registry_locked": true,
+      "resolved": {
+        "optimizer": "SGD",
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "foreach": false,
+        "train_mb_size": 64,
+        "eval_mb_size": 128,
+        "num_workers": 0,
+        "epochs_per_experience": 20,
+        "tukey": false,
+        "shrinkage": true,
+        "shrink1": 1.0,
+        "shrink2": 1.0,
+        "covnorm": true
+      },
+      "explicit_diagnostic_overrides": {
+        "optimizer": "SGD",
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "foreach": false,
+        "train_mb_size": 64,
+        "eval_mb_size": 128,
+        "num_workers": 0,
+        "epochs_per_experience": 20,
+        "tukey": false,
+        "shrinkage": true,
+        "shrink1": 1.0,
+        "shrink2": 1.0,
+        "covnorm": true
+      }
+    },
+    "hyperparameter_search": {
+      "status": "current_order_seed_lr_candidate",
+      "required_trials": 3,
+      "test_set_used_for_selection": false,
+      "hyperparameter_search_flops": 0
+    },
+    "summary_null_reasons": {
+      "network.total_reused_neurons": "No comparable explicit neuron-reuse mechanism.",
+      "training_runtime.total_gpu_ms": "null only for CPU execution.",
+      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution."
+    },
+    "software": {
+      "python": "3.10.20",
+      "torch": "2.11.0+cu130",
+      "cuda_runtime": "13.0",
+      "avalanche": "0.6.0a"
+    },
+    "exp_name": "uwave-all",
+    "data_role": "formal",
+    "intransigence": {
+      "automatic_fill_enabled": true,
+      "joint_json_path": "/home/yizhil/Avalanche/avalanche-master/joint_result_uwave-all/fecam/order2/joint_uwave_fecam__order-2__seed-054.json",
+      "pending_results_are_formal_aggregation_eligible": false
+    }
+  }
+}

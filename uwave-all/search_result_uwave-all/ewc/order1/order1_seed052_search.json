@@ -1,0 +1,54 @@
+{
+  "schema": "pp2-order-seed-search-v1",
+  "exp_name": "uwave-all",
+  "dataset": "uwave",
+  "method": "ewc",
+  "order": 1,
+  "seed": 52,
+  "backbone": "resnet18_cifar",
+  "loss_selection": "last_epoch_train_mean",
+  "lr_candidates": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "candidates": {
+    "0.1": {
+      "status": "completed",
+      "selection_loss": 0.010025308582832855,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 251830488304014,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr01/search_uwave_ewc__order-1__lr-01__seed-052__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr01/search_uwave_ewc__order-1__lr-01__seed-052__accuracy-matrix.json"
+    },
+    "0.05": {
+      "status": "completed",
+      "selection_loss": 0.0027087712454387045,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 251830488304014,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr005/search_uwave_ewc__order-1__lr-005__seed-052__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr005/search_uwave_ewc__order-1__lr-005__seed-052__accuracy-matrix.json"
+    },
+    "0.01": {
+      "status": "completed",
+      "selection_loss": 0.0016938068075167362,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 251830488304014,
+      "storage_bytes": 44691744,
+      "summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr001/search_uwave_ewc__order-1__lr-001__seed-052__summary.json",
+      "accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr001/search_uwave_ewc__order-1__lr-001__seed-052__accuracy-matrix.json"
+    }
+  },
+  "best_lr": 0.01,
+  "best_loss": 0.0016938068075167362,
+  "best_checkpoint": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/checkpoint/uwave__ewc__order-1__seed-052__lr-001__best.pt",
+  "best_summary_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr001/search_uwave_ewc__order-1__lr-001__seed-052__summary.json",
+  "best_accuracy_matrix_file": "/home/yizhil/Avalanche/avalanche-master/search_result_uwave-all/ewc/order1/lr001/search_uwave_ewc__order-1__lr-001__seed-052__accuracy-matrix.json",
+  "total_search_flops": 755491464912042,
+  "storage_bytes": 44691744,
+  "status": "completed",
+  "started_at": "2026-09-11T10:04:02+02:00",
+  "finished_at": "2026-09-11T10:17:19+02:00"
+}
