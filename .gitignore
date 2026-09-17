@@ -1,0 +1,4 @@
+*
+!/.gitignore
+!/spike-all/
+!/spike-all/**

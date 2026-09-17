@@ -1,0 +1,50 @@
+{
+  "schema": "pp2-order-seed-search-v1",
+  "exp_name": "spike-all",
+  "dataset": "spike",
+  "method": "tagfex",
+  "order": 1,
+  "seed": 69,
+  "backbone": "resnet18_cifar",
+  "loss_selection": "last_epoch_train_mean",
+  "lr_candidates": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "candidates": {
+    "0.1": {
+      "status": "completed",
+      "selection_loss": 3.4949955803122723,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 575919311353841927,
+      "storage_bytes": 868471644,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/lr01/search_spike_tagfex__order-1__lr-01__seed-069__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/lr01/search_spike_tagfex__order-1__lr-01__seed-069__accuracy-matrix.json",
+      "checkpoint_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/checkpoint_candidates/spike__tagfex__order-1__seed-069__lr-01.pt"
+    },
+    "0.05": {
+      "status": "completed",
+      "selection_loss": 2.095099260501826,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 575919311353842103,
+      "storage_bytes": 868471644,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/lr005/search_spike_tagfex__order-1__lr-005__seed-069__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/lr005/search_spike_tagfex__order-1__lr-005__seed-069__accuracy-matrix.json",
+      "checkpoint_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/tagfex/order1/checkpoint_candidates/spike__tagfex__order-1__seed-069__lr-005.pt"
+    },
+    "0.01": {
+      "status": "pending"
+    }
+  },
+  "best_lr": null,
+  "best_loss": null,
+  "best_checkpoint": null,
+  "best_summary_file": null,
+  "best_accuracy_matrix_file": null,
+  "total_search_flops": null,
+  "storage_bytes": null,
+  "status": "pending",
+  "started_at": "2026-09-17T05:56:39+02:00",
+  "finished_at": null
+}

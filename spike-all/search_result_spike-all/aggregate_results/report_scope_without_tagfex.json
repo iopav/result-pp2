@@ -1,0 +1,18 @@
+{
+  "exp_name": "spike-all",
+  "dataset": "spike",
+  "included_methods": [
+    "ewc",
+    "er_ace",
+    "icarl",
+    "fecam",
+    "cwr_star"
+  ],
+  "excluded_methods": [
+    "tagfex"
+  ],
+  "search_candidate_rows": 225,
+  "selected_rows": 75,
+  "joint_rows": 75,
+  "note": "Five-method interim report. TagFex raw artifacts may be incomplete. Completion audit includes TagFex as a point-in-time observation."
+}

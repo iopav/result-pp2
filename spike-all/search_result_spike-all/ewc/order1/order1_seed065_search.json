@@ -1,0 +1,54 @@
+{
+  "schema": "pp2-order-seed-search-v1",
+  "exp_name": "spike-all",
+  "dataset": "spike",
+  "method": "ewc",
+  "order": 1,
+  "seed": 65,
+  "backbone": "resnet18_cifar",
+  "loss_selection": "last_epoch_train_mean",
+  "lr_candidates": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "candidates": {
+    "0.1": {
+      "status": "completed",
+      "selection_loss": 0.06184620109404096,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 5651517231594510,
+      "storage_bytes": 44716368,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr01/search_spike_ewc__order-1__lr-01__seed-065__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr01/search_spike_ewc__order-1__lr-01__seed-065__accuracy-matrix.json"
+    },
+    "0.05": {
+      "status": "completed",
+      "selection_loss": 0.010778194553687335,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 5651517231594510,
+      "storage_bytes": 44716368,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr005/search_spike_ewc__order-1__lr-005__seed-065__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr005/search_spike_ewc__order-1__lr-005__seed-065__accuracy-matrix.json"
+    },
+    "0.01": {
+      "status": "completed",
+      "selection_loss": 0.09069310068528845,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 5651517231594510,
+      "storage_bytes": 44716368,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr001/search_spike_ewc__order-1__lr-001__seed-065__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr001/search_spike_ewc__order-1__lr-001__seed-065__accuracy-matrix.json"
+    }
+  },
+  "best_lr": 0.05,
+  "best_loss": 0.010778194553687335,
+  "best_checkpoint": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/checkpoint/spike__ewc__order-1__seed-065__lr-005__best.pt",
+  "best_summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr005/search_spike_ewc__order-1__lr-005__seed-065__summary.json",
+  "best_accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_spike-all/ewc/order1/lr005/search_spike_ewc__order-1__lr-005__seed-065__accuracy-matrix.json",
+  "total_search_flops": 16954551694783530,
+  "storage_bytes": 44716368,
+  "status": "completed",
+  "started_at": "2026-09-16T12:17:10+02:00",
+  "finished_at": "2026-09-16T13:02:05+02:00"
+}

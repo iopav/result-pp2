@@ -1,0 +1,593 @@
+{
+  "exp_name": "spike-all",
+  "method": "FeCAM",
+  "seed": 71,
+  "tasks": 18,
+  "cil_performance": {
+    "average_incremental_accuracy": 0.6862061040741495,
+    "final_average_accuracy": 0.5236875800256082,
+    "average_forgetting": 0.11509075778852657,
+    "mean_final_accuracy_loss": 0.11509075778852657,
+    "backward_transfer": -0.11509075778852657,
+    "worst_forgotten_task": 2,
+    "forgetting_mean": 0.11509075778852657,
+    "forgetting_median": 0.05128205128205132,
+    "forgetting_std": 0.1962299252860504,
+    "forgetting_min": 0.0,
+    "forgetting_q25": 0.0,
+    "forgetting_q75": 0.1282051282051282,
+    "forgetting_max": 0.8461538461538461,
+    "forgetting_positive_fraction": 0.7058823529411765,
+    "task_end_seen_accuracy_curve": [
+      0.9224137931034483,
+      0.9161290322580645,
+      0.8615384615384616,
+      0.7991452991452992,
+      0.7655677655677655,
+      0.7371794871794872,
+      0.6875,
+      0.710997442455243,
+      0.6534883720930232,
+      0.6545842217484008,
+      0.6318897637795275,
+      0.6142595978062158,
+      0.6006825938566553,
+      0.5856,
+      0.588855421686747,
+      0.5604551920341394,
+      0.5377358490566038,
+      0.5236875800256082
+    ],
+    "forgetting_per_task": [
+      0.2155172413793104,
+      0.8461538461538461,
+      0.07500000000000007,
+      0.23076923076923073,
+      0.05128205128205132,
+      0.05128205128205132,
+      0.024999999999999967,
+      0.0,
+      0.12820512820512822,
+      0.1282051282051282,
+      0.051282051282051266,
+      0.0,
+      0.1282051282051282,
+      0.02564102564102566,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "intransigence": null,
+    "intransigence_mean": null
+  },
+  "network": {
+    "final_hidden_neurons": 512,
+    "total_new_neurons": 0,
+    "total_reused_neurons": null
+  },
+  "training_runtime": {
+    "total_s": 23.030778169166297,
+    "total_gpu_ms": 23036.585189819336,
+    "initial_task_s": 20.48927134508267,
+    "incremental_tasks_total_s": 2.5415068240836263,
+    "mean_incremental_task_s": 0.1495004014166839,
+    "median_incremental_task_s": 0.148454223992303
+  },
+  "training_operations": {
+    "task_summed_terminal_flops_per_sample": 584699270959.0068,
+    "overall_learning_flops": 898792064514034,
+    "core_training_flops": 809177509724618,
+    "learning_auxiliary_flops": 89614554789416,
+    "single_sample_forward_flops": 51113678520,
+    "auxiliary_nonflop_ops": {
+      "explicit_nonflop_operator_calls": {
+        "aten._local_scalar_dense": 218,
+        "aten._pin_memory": 480,
+        "aten._to_copy": 905,
+        "aten._unique2": 36,
+        "aten._unsafe_view": 219,
+        "aten.as_strided": 40,
+        "aten.cat": 36,
+        "aten.clone": 13674,
+        "aten.copy_": 468,
+        "aten.detach": 15938,
+        "aten.diagonal": 60,
+        "aten.empty": 94,
+        "aten.eq": 40,
+        "aten.equal": 20,
+        "aten.expand": 160,
+        "aten.eye": 40,
+        "aten.fill_": 40,
+        "aten.index": 40,
+        "aten.index_put_": 18,
+        "aten.is_pinned": 480,
+        "aten.le": 20,
+        "aten.lift_fresh": 13373,
+        "aten.logical_not": 160,
+        "aten.masked_fill": 320,
+        "aten.ne": 40,
+        "aten.new_ones": 20,
+        "aten.ones_like": 160,
+        "aten.permute": 20,
+        "aten.random_": 58,
+        "aten.randperm": 40,
+        "aten.relu": 3723,
+        "aten.repeat": 219,
+        "aten.scalar_tensor": 40,
+        "aten.select": 414,
+        "aten.slice": 54,
+        "aten.squeeze": 20,
+        "aten.stack": 219,
+        "aten.t": 820,
+        "aten.threshold_backward": 2720,
+        "aten.transpose": 13118,
+        "aten.uniform_": 36,
+        "aten.unsqueeze": 60,
+        "aten.view": 539,
+        "aten.zeros": 232,
+        "profiler._record_function_enter_new": 577,
+        "profiler._record_function_exit": 577
+      },
+      "manual_nonflop_operations": [],
+      "total_recorded_events": 70585,
+      "policy": "Only comparisons, indexing, shape/view, data movement, integer/bit operations and other explicitly documented non-floating-point operations are listed here; unknown computational operators still abort the run."
+    }
+  },
+  "persistent_storage": {
+    "model_parameter_bytes": 44716368,
+    "replay_sample_bytes": 0,
+    "replay_label_bytes": 0,
+    "auxiliary_bytes": 65726388,
+    "total_bytes": 110442756,
+    "total_mib": 105.32641983032227,
+    "pulse_encoding": "NA",
+    "label_encoding": "NA"
+  },
+  "inference": {
+    "final_latency_ms_per_sample": 9.608616974626914
+  },
+  "working_memory_diagnostic": {
+    "native_peak_allocated_gpu_memory_mib": 7501.953125,
+    "note": "Transient working memory; excluded from persistent storage."
+  },
+  "selection": {
+    "mode": "last_epoch_train_mean",
+    "loss": 2.9422765696270865,
+    "loss_eval_flops": 4530611337580
+  },
+  "config": {
+    "schema": "metrics1.docx-compatible-avalanche-cil-v2",
+    "dataset": {
+      "name": "spike",
+      "train_x": "spike/X_train_20_cla_400steps.npy",
+      "train_y": "spike/Y_train_20_cla_400steps.npy",
+      "test_x": "spike/X_test_20_cla_400steps.npy",
+      "test_y": "spike/Y_test_20_cla_400steps.npy",
+      "train_shape": [
+        3219,
+        400,
+        64
+      ],
+      "test_shape": [
+        781,
+        400,
+        64
+      ],
+      "source_x_dtype": "float32",
+      "num_classes": 20,
+      "timesteps": 400,
+      "in_channels": 64,
+      "image_train_x": "spike/X_train_20_cla_400steps_img.npy",
+      "image_train_y": "spike/Y_train_20_cla_400steps_img.npy",
+      "image_test_x": "spike/X_test_20_cla_400steps_img.npy",
+      "image_test_y": "spike/Y_test_20_cla_400steps_img.npy",
+      "image_train_shape": [
+        3219,
+        3,
+        160,
+        160
+      ],
+      "image_test_shape": [
+        781,
+        3,
+        160,
+        160
+      ],
+      "image_x_dtype": "uint8",
+      "image_layout": "NCHW"
+    },
+    "method": "fecam",
+    "method_parameters": {
+      "display_name": "FeCAM",
+      "backbone_training": "first_experience_only_then_frozen",
+      "later_experience_update": "class_means_and_covariances_only_no_sgd",
+      "tukey": false,
+      "shrinkage": true,
+      "shrink1": 1.0,
+      "shrink2": 1.0,
+      "covnorm": true,
+      "source": "FeCAM classifier-incremental protocol; Avalanche classifier defaults except tukey disabled for signed shared features"
+    },
+    "backbone": {
+      "backbone_id": "resnet18_cifar",
+      "feature_dim": 512,
+      "feature_dim_per_branch": null,
+      "base_width": 64,
+      "stage_channels": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "pretrained": false,
+      "status": "registered_shared_backbone"
+    },
+    "training": {
+      "optimizer": "SGD",
+      "learning_rate": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "foreach": false,
+      "train_mb_size": 64,
+      "eval_mb_size": 128,
+      "num_workers": 0,
+      "requested_epochs_per_experience": 20,
+      "effective_sgd_epochs_per_experience": [
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fecam_later_experience_loop": "one frozen-feature class-statistics pass"
+    },
+    "protocol": {
+      "augmentation": "none",
+      "normalization": "none",
+      "input_view_id": "spike_raw_binary_to_rgb160_runtime_v1",
+      "technical_input_conversion": "raw binary [T,C] -> [C,T] persistence view -> runtime RGB 160x160 at model boundary",
+      "classes_per_experience": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "replay_budget_cap_samples": 2000,
+      "spike_replay_persistence": null,
+      "spike_replay_label_persistence": null,
+      "flop_backend": "torch.utils.flop_counter.FlopCounterMode",
+      "flop_convention": "1 MAC = 2 FLOPs; no post-hoc doubling of PyTorch 2.11 totals",
+      "tagfex_two_view_policy": null
+    },
+    "order_registry_source": "cil_experiments/order_seed_registry.py",
+    "selected_task_groups": [
+      [
+        16,
+        19,
+        0
+      ],
+      [
+        9
+      ],
+      [
+        8
+      ],
+      [
+        17
+      ],
+      [
+        1
+      ],
+      [
+        12
+      ],
+      [
+        11
+      ],
+      [
+        5
+      ],
+      [
+        10
+      ],
+      [
+        4
+      ],
+      [
+        18
+      ],
+      [
+        13
+      ],
+      [
+        15
+      ],
+      [
+        7
+      ],
+      [
+        14
+      ],
+      [
+        6
+      ],
+      [
+        3
+      ],
+      [
+        2
+      ]
+    ],
+    "dataset_orders": {
+      "1": [
+        [
+          7,
+          18,
+          12
+        ],
+        [
+          1
+        ],
+        [
+          11
+        ],
+        [
+          9
+        ],
+        [
+          13
+        ],
+        [
+          8
+        ],
+        [
+          2
+        ],
+        [
+          17
+        ],
+        [
+          10
+        ],
+        [
+          6
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          15
+        ],
+        [
+          3
+        ],
+        [
+          19
+        ],
+        [
+          0
+        ],
+        [
+          14
+        ],
+        [
+          16
+        ]
+      ],
+      "2": [
+        [
+          16,
+          19,
+          0
+        ],
+        [
+          9
+        ],
+        [
+          8
+        ],
+        [
+          17
+        ],
+        [
+          1
+        ],
+        [
+          12
+        ],
+        [
+          11
+        ],
+        [
+          5
+        ],
+        [
+          10
+        ],
+        [
+          4
+        ],
+        [
+          18
+        ],
+        [
+          13
+        ],
+        [
+          15
+        ],
+        [
+          7
+        ],
+        [
+          14
+        ],
+        [
+          6
+        ],
+        [
+          3
+        ],
+        [
+          2
+        ]
+      ],
+      "3": [
+        [
+          14,
+          1,
+          19
+        ],
+        [
+          2
+        ],
+        [
+          16
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          7
+        ],
+        [
+          6
+        ],
+        [
+          13
+        ],
+        [
+          12
+        ],
+        [
+          0
+        ],
+        [
+          8
+        ],
+        [
+          11
+        ],
+        [
+          10
+        ],
+        [
+          18
+        ],
+        [
+          4
+        ],
+        [
+          9
+        ],
+        [
+          17
+        ],
+        [
+          15
+        ]
+      ]
+    },
+    "seeds": [
+      63,
+      65,
+      67,
+      69,
+      71
+    ],
+    "final_hyperparameters": {
+      "source": "cil_experiments/final_hyperparameters.py",
+      "registry_locked": true,
+      "resolved": {
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "foreach": false,
+        "train_mb_size": 64,
+        "eval_mb_size": 128,
+        "num_workers": 0,
+        "epochs_per_experience": 20,
+        "tukey": false,
+        "shrinkage": true,
+        "shrink1": 1.0,
+        "shrink2": 1.0,
+        "covnorm": true
+      },
+      "explicit_diagnostic_overrides": {
+        "optimizer": "SGD",
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "foreach": false,
+        "train_mb_size": 64,
+        "eval_mb_size": 128,
+        "num_workers": 0,
+        "epochs_per_experience": 20,
+        "tukey": false,
+        "shrinkage": true,
+        "shrink1": 1.0,
+        "shrink2": 1.0,
+        "covnorm": true
+      }
+    },
+    "hyperparameter_search": {
+      "status": "current_order_seed_lr_candidate",
+      "required_trials": 3,
+      "test_set_used_for_selection": false,
+      "hyperparameter_search_flops": 0
+    },
+    "summary_null_reasons": {
+      "network.total_reused_neurons": "No comparable explicit neuron-reuse mechanism.",
+      "training_runtime.total_gpu_ms": "null only for CPU execution.",
+      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution.",
+      "cil_performance.intransigence": "Disabled for search/joint learning or explicitly skipped for this formal run."
+    },
+    "software": {
+      "python": "3.10.20",
+      "torch": "2.11.0+cu130",
+      "cuda_runtime": "13.0",
+      "avalanche": "0.6.0a"
+    },
+    "exp_name": "spike-all",
+    "data_role": "formal",
+    "intransigence": {
+      "automatic_fill_enabled": false,
+      "joint_summary_path": null,
+      "pending_results_are_formal_aggregation_eligible": false
+    }
+  }
+}
