@@ -1,0 +1,15 @@
+{
+  "identity": {
+    "exp_name": "texture-all",
+    "dataset": "texture",
+    "method": "ewc",
+    "order": 3,
+    "seed": 53,
+    "lr": 0.1
+  },
+  "files": {
+    "config.json": "192220791912268b294dbb174ecd2099b4876ff33317ec906d776ce6a4ac62f4",
+    "failure.json": "24c6891bababbd332c00dfde2f61eded9eda6167d9b6c01b439ed426e0492de1",
+    "run.log": "54323454e2b6fcb26949b9be7f4d7883f0fafb03a75a3560e431754e662de0fc"
+  }
+}

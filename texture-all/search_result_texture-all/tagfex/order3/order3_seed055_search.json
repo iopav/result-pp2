@@ -1,0 +1,54 @@
+{
+  "schema": "pp2-order-seed-search-v1",
+  "exp_name": "texture-all",
+  "dataset": "texture",
+  "method": "tagfex",
+  "order": 3,
+  "seed": 55,
+  "backbone": "resnet18_cifar",
+  "loss_selection": "last_epoch_train_mean",
+  "lr_candidates": [
+    0.1,
+    0.05,
+    0.01
+  ],
+  "candidates": {
+    "0.1": {
+      "status": "completed",
+      "selection_loss": 9.371136705080668,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 119312388877228725,
+      "storage_bytes": 510577468,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr01/search_texture_tagfex__order-3__lr-01__seed-055__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr01/search_texture_tagfex__order-3__lr-01__seed-055__accuracy-matrix.json"
+    },
+    "0.05": {
+      "status": "completed",
+      "selection_loss": 1.9724162896474202,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 119312388877886117,
+      "storage_bytes": 510577468,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr005/search_texture_tagfex__order-3__lr-005__seed-055__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr005/search_texture_tagfex__order-3__lr-005__seed-055__accuracy-matrix.json"
+    },
+    "0.01": {
+      "status": "completed",
+      "selection_loss": 1.977198807398478,
+      "selection_loss_eval_flops": 0,
+      "overall_learning_flops": 119312388877887263,
+      "storage_bytes": 510577468,
+      "summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr001/search_texture_tagfex__order-3__lr-001__seed-055__summary.json",
+      "accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr001/search_texture_tagfex__order-3__lr-001__seed-055__accuracy-matrix.json"
+    }
+  },
+  "best_lr": 0.05,
+  "best_loss": 1.9724162896474202,
+  "best_checkpoint": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/checkpoint/texture__tagfex__order-3__seed-055__lr-005__best.pt",
+  "best_summary_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr005/search_texture_tagfex__order-3__lr-005__seed-055__summary.json",
+  "best_accuracy_matrix_file": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/tagfex/order3/lr005/search_texture_tagfex__order-3__lr-005__seed-055__accuracy-matrix.json",
+  "total_search_flops": 357937166633002105,
+  "storage_bytes": 510577468,
+  "status": "completed",
+  "started_at": "2026-09-17T23:32:12+02:00",
+  "finished_at": "2026-09-18T00:52:16+02:00"
+}

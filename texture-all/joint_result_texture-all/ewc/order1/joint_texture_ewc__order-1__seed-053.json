@@ -1,0 +1,288 @@
+{
+  "schema": "pp2-joint-learning-v2",
+  "exp_name": "texture-all",
+  "dataset": "texture",
+  "method": "ewc",
+  "order": 1,
+  "seed": 53,
+  "backbone": "resnet18_cifar",
+  "best_lr": 0.05,
+  "status": "completed",
+  "started_at": "2026-09-18T21:36:09+02:00",
+  "finished_at": "2026-09-18T21:39:56+02:00",
+  "config": {
+    "source_search_json": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/search_result_texture-all/ewc/order1/order1_seed053_search.json",
+    "optimizer": "SGD",
+    "learning_rate": 0.05,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "foreach": false,
+    "train_mb_size": 64,
+    "eval_mb_size": 128,
+    "num_workers": 0,
+    "epochs": 20,
+    "training_scope": "stage k uses the cumulative train data from ordered tasks 1..k",
+    "strategy": "one from-scratch ordinary backbone and seen-class linear head per stage",
+    "reference_accuracy": "lower-triangular matrix; intransigence uses its diagonal",
+    "data_role": "formal"
+  },
+  "tasks": 10,
+  "task_groups": [
+    [
+      2,
+      8,
+      6
+    ],
+    [
+      3
+    ],
+    [
+      7
+    ],
+    [
+      1
+    ],
+    [
+      10
+    ],
+    [
+      0
+    ],
+    [
+      4
+    ],
+    [
+      11
+    ],
+    [
+      5
+    ],
+    [
+      9
+    ]
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      1.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      1.0,
+      1.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.3181818181818182,
+      0.0,
+      1.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.6363636363636364,
+      0.0,
+      0.0,
+      0.0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.9242424242424242,
+      0.8,
+      1.0,
+      1.0,
+      1.0,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      0.9848484848484849,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9444444444444444,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      null,
+      null,
+      null
+    ],
+    [
+      0.5757575757575758,
+      1.0,
+      1.0,
+      1.0,
+      0.0625,
+      0.05555555555555555,
+      1.0,
+      1.0,
+      null,
+      null
+    ],
+    [
+      0.9848484848484849,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      null
+    ],
+    [
+      0.9848484848484849,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "accuracy_by_task": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.9444444444444444,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "stage_final_epoch_train_loss": [
+    0.0011967406240013293,
+    0.0008350668077938813,
+    0.10147565816129957,
+    0.0995464341204827,
+    0.10435643876726564,
+    0.005134375985226414,
+    0.003486597664415919,
+    0.12341559773311019,
+    0.006253769286905045,
+    0.00268083744449541
+  ],
+  "train_samples_by_stage": [
+    234,
+    309,
+    392,
+    471,
+    555,
+    637,
+    719,
+    800,
+    883,
+    960
+  ],
+  "final_epoch_train_loss": 0.00268083744449541,
+  "training_runtime": {
+    "total_s": 225.4271321150004,
+    "total_gpu_ms": 227327.5625
+  },
+  "training_operations": {
+    "task_summed_terminal_flops_per_sample": 1150091356495.2095,
+    "overall_learning_flops": 13709087807426650,
+    "core_training_flops": 13709087807426650,
+    "learning_auxiliary_flops": 0,
+    "single_sample_forward_flops": 38301453324,
+    "auxiliary_nonflop_ops": {
+      "explicit_nonflop_operator_calls": {
+        "aten._local_scalar_dense": 2340,
+        "aten._pin_memory": 5820,
+        "aten._to_copy": 3880,
+        "aten.clone": 620,
+        "aten.detach": 192680,
+        "aten.empty": 400,
+        "aten.expand": 1940,
+        "aten.is_pinned": 5820,
+        "aten.lift_fresh": 123080,
+        "aten.ones_like": 1940,
+        "aten.random_": 400,
+        "aten.randperm": 400,
+        "aten.relu": 32980,
+        "aten.stack": 1940,
+        "aten.t": 9700,
+        "aten.threshold_backward": 32980,
+        "aten.view": 5820,
+        "profiler._record_function_enter_new": 6020,
+        "profiler._record_function_exit": 6020
+      },
+      "manual_nonflop_operations": [],
+      "total_recorded_events": 434780,
+      "policy": "Only comparisons, indexing, shape/view, data movement, integer/bit operations and other explicitly documented non-floating-point operations are listed here; unknown computational operators still abort the run."
+    },
+    "single_forward_detail": {
+      "flops": 38301453324,
+      "operation_calls": {
+        "single_sample_forward": {
+          "aten.convolution": 20,
+          "aten.cudnn_batch_norm": 20,
+          "aten.relu": 17,
+          "aten.add": 8,
+          "aten.mean": 1,
+          "aten.view": 1,
+          "aten.t": 1,
+          "aten.addmm": 1
+        }
+      }
+    }
+  },
+  "persistent_storage": {
+    "model_parameter_bytes": 44699952,
+    "model_buffer_bytes": 38560,
+    "optimizer_state_bytes": 44699952,
+    "total_bytes": 89438464,
+    "total_mib": 85.295166015625
+  },
+  "inference": {
+    "final_latency_ms_per_sample": 0.42338019166360635
+  },
+  "working_memory_diagnostic": {
+    "native_peak_allocated_gpu_memory_mib": 10092.31494140625
+  }
+}
