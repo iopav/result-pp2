@@ -57,8 +57,27 @@
       0.1578947368421053,
       0.07692307692307687
     ],
-    "intransigence": null,
-    "intransigence_mean": null
+    "intransigence": [
+      -0.3418803418803419,
+      0.17948717948717952,
+      -0.07499999999999996,
+      -0.02564102564102566,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.1282051282051282,
+      -0.07692307692307687,
+      -0.02564102564102566,
+      0.0,
+      -0.3846153846153846,
+      -0.20512820512820507,
+      -0.33333333333333337,
+      -0.026315789473684292,
+      -0.02564102564102566,
+      -0.23076923076923073
+    ],
+    "intransigence_mean": -0.0944225770980157
   },
   "network": {
     "final_hidden_neurons": 9216,
@@ -1217,8 +1236,7 @@
     },
     "summary_null_reasons": {
       "training_runtime.total_gpu_ms": "null only for CPU execution.",
-      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution.",
-      "cil_performance.intransigence": "Disabled for search/joint learning or explicitly skipped for this formal run."
+      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution."
     },
     "software": {
       "python": "3.10.20",
@@ -1229,8 +1247,8 @@
     "exp_name": "spike-all",
     "data_role": "formal",
     "intransigence": {
-      "automatic_fill_enabled": false,
-      "joint_summary_path": null,
+      "automatic_fill_enabled": true,
+      "joint_json_path": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/joint_result_spike-all/tagfex/order1/joint_spike_tagfex__order-1__seed-067.json",
       "pending_results_are_formal_aggregation_eligible": false
     }
   }

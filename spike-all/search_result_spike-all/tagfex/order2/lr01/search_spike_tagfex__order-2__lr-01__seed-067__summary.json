@@ -1,83 +1,64 @@
 {
   "exp_name": "spike-all",
   "method": "TagFex",
-  "seed": 63,
+  "seed": 67,
   "tasks": 18,
   "cil_performance": {
-    "average_incremental_accuracy": 0.9099704185618237,
-    "final_average_accuracy": 0.8156209987195903,
-    "average_forgetting": 0.1754352888253817,
-    "mean_final_accuracy_loss": 0.17091040194755366,
-    "backward_transfer": -0.17091040194755366,
-    "worst_forgotten_task": 2,
-    "forgetting_mean": 0.1754352888253817,
-    "forgetting_median": 0.10526315789473684,
-    "forgetting_std": 0.15555155683289962,
-    "forgetting_min": 0.025000000000000022,
-    "forgetting_q25": 0.09999999999999998,
-    "forgetting_q75": 0.20512820512820518,
-    "forgetting_max": 0.6666666666666667,
-    "forgetting_positive_fraction": 1.0,
+    "average_incremental_accuracy": 0.9005355218055175,
+    "final_average_accuracy": 0.8348271446862996,
+    "average_forgetting": 0.12438497945597338,
+    "mean_final_accuracy_loss": 0.04233759816924115,
+    "backward_transfer": -0.04233759816924115,
+    "worst_forgotten_task": 8,
+    "forgetting_mean": 0.12438497945597338,
+    "forgetting_median": 0.125,
+    "forgetting_std": 0.10874378247049948,
+    "forgetting_min": 0.0,
+    "forgetting_q25": 0.02564102564102566,
+    "forgetting_q75": 0.17500000000000004,
+    "forgetting_max": 0.3589743589743589,
+    "forgetting_positive_fraction": 0.8823529411764706,
     "task_end_seen_accuracy_curve": [
-      0.905982905982906,
-      0.9871794871794872,
-      0.9438775510204082,
-      0.9702127659574468,
-      0.9416058394160584,
-      0.9554140127388535,
-      0.9008498583569405,
-      0.9438775510204082,
-      0.9002320185614849,
-      0.8787234042553191,
-      0.9410609037328095,
-      0.8996350364963503,
-      0.879045996592845,
-      0.9169329073482428,
-      0.8751879699248121,
-      0.8776671408250356,
-      0.8463611859838275,
-      0.8156209987195903
+      0.9482758620689655,
+      0.9548387096774194,
+      0.9487179487179487,
+      0.9102564102564102,
+      0.9560439560439561,
+      0.9166666666666666,
+      0.8948863636363636,
+      0.887468030690537,
+      0.8744186046511628,
+      0.9147121535181236,
+      0.889763779527559,
+      0.8610603290676416,
+      0.8976109215017065,
+      0.888,
+      0.8960843373493976,
+      0.8748221906116643,
+      0.8611859838274932,
+      0.8348271446862996
     ],
     "forgetting_per_task": [
-      0.1367521367521367,
-      0.6666666666666667,
-      0.09999999999999998,
-      0.10256410256410253,
-      0.20512820512820518,
-      0.025000000000000022,
-      0.23076923076923073,
+      0.3017241379310345,
       0.02564102564102566,
-      0.10256410256410253,
-      0.17948717948717952,
-      0.05128205128205121,
-      0.20512820512820518,
-      0.3846153846153846,
-      0.05128205128205121,
+      0.125,
+      0.1282051282051282,
       0.3076923076923077,
-      0.10526315789473684,
-      0.10256410256410253
+      0.17948717948717952,
+      0.17500000000000004,
+      0.3589743589743589,
+      0.15384615384615385,
+      0.02564102564102566,
+      0.02564102564102566,
+      0.07692307692307687,
+      0.0,
+      0.1282051282051282,
+      0.07692307692307687,
+      0.02564102564102566,
+      0.0
     ],
-    "intransigence": [
-      0.05982905982905984,
-      -0.3076923076923077,
-      -0.050000000000000044,
-      0.0,
-      -0.05128205128205132,
-      0.0,
-      -0.02564102564102566,
-      0.0,
-      -0.3076923076923077,
-      -0.02564102564102566,
-      -0.10256410256410253,
-      -0.02564102564102566,
-      -0.07692307692307687,
-      -0.46153846153846156,
-      -0.1282051282051282,
-      -0.07894736842105265,
-      -0.23076923076923073,
-      -0.17948717948717952
-    ],
-    "intransigence_mean": -0.11067751287049533
+    "intransigence": null,
+    "intransigence_mean": null
   },
   "network": {
     "final_hidden_neurons": 9216,
@@ -85,54 +66,54 @@
     "total_reused_neurons": 8704
   },
   "training_runtime": {
-    "total_s": 7281.137848746992,
-    "total_gpu_ms": 7281333.8125,
-    "initial_task_s": 50.8149814089993,
-    "incremental_tasks_total_s": 7230.322867337993,
-    "mean_incremental_task_s": 425.3131098434113,
-    "median_incremental_task_s": 445.96662078699956
+    "total_s": 7443.626580498996,
+    "total_gpu_ms": 7443855.47265625,
+    "initial_task_s": 54.76545681199059,
+    "incremental_tasks_total_s": 7388.861123687006,
+    "mean_incremental_task_s": 434.6388896286474,
+    "median_incremental_task_s": 467.5744208690012
   },
   "training_operations": {
-    "task_summed_terminal_flops_per_sample": 20250083610792.188,
-    "overall_learning_flops": 575921018433356795,
-    "core_training_flops": 535099901199043660,
-    "learning_auxiliary_flops": 40821117234313135,
+    "task_summed_terminal_flops_per_sample": 20249543563329.64,
+    "overall_learning_flops": 576060793011269406,
+    "core_training_flops": 535227282259030116,
+    "learning_auxiliary_flops": 40833510752239290,
     "single_sample_forward_flops": 501096867860,
     "auxiliary_nonflop_ops": {
       "explicit_nonflop_operator_calls": {
-        "aten._local_scalar_dense": 95845,
+        "aten._local_scalar_dense": 95858,
         "aten._pin_memory": 27960,
         "aten._to_copy": 30564,
-        "aten._unsafe_view": 263204,
+        "aten._unsafe_view": 263276,
         "aten.any": 18320,
-        "aten.arange": 2916,
-        "aten.argmin": 2916,
+        "aten.arange": 2917,
+        "aten.argmin": 2917,
         "aten.cat": 56305,
         "aten.clamp_min": 17,
         "aten.clamp_min_": 36960,
-        "aten.clone": 895173,
+        "aten.clone": 895465,
         "aten.copy_": 2091,
-        "aten.detach": 2261176,
+        "aten.detach": 2261379,
         "aten.empty": 4162,
         "aten.eq": 27800,
-        "aten.expand": 147364,
+        "aten.expand": 147387,
         "aten.eye": 18480,
         "aten.fill_": 1116,
         "aten.ge": 18320,
-        "aten.index": 57724,
-        "aten.index_put": 36644,
+        "aten.index": 57771,
+        "aten.index_put": 36667,
         "aten.is_pinned": 27960,
-        "aten.lift_fresh": 623513,
-        "aten.lt": 9082,
+        "aten.lift_fresh": 623720,
+        "aten.lt": 9094,
         "aten.masked_fill": 36960,
         "aten.masked_fill_": 27800,
-        "aten.ne": 2916,
+        "aten.ne": 2917,
         "aten.new_empty": 1020,
-        "aten.new_zeros": 36644,
+        "aten.new_zeros": 36667,
         "aten.normal_": 445,
         "aten.ones": 360,
         "aten.ones_like": 9320,
-        "aten.permute": 46042,
+        "aten.permute": 46054,
         "aten.random_": 927,
         "aten.randperm": 720,
         "aten.relu": 2146624,
@@ -140,18 +121,18 @@
         "aten.repeat": 126272,
         "aten.roll": 18480,
         "aten.scalar_tensor": 27640,
-        "aten.select": 2916,
+        "aten.select": 2917,
         "aten.set_": 3060,
-        "aten.slice": 149823,
-        "aten.slice_backward": 9082,
+        "aten.slice": 149882,
+        "aten.slice_backward": 9093,
         "aten.squeeze": 27800,
         "aten.stack": 18969,
-        "aten.t": 422997,
+        "aten.t": 423165,
         "aten.threshold_backward": 335360,
-        "aten.transpose": 357893,
+        "aten.transpose": 358025,
         "aten.uniform_": 413,
-        "aten.unsqueeze": 110802,
-        "aten.view": 501388,
+        "aten.unsqueeze": 110814,
+        "aten.view": 501604,
         "aten.where": 9160,
         "aten.zero_": 1546,
         "aten.zeros": 9718,
@@ -161,15 +142,15 @@
       "manual_nonflop_operations": [
         {
           "name": "numpy.packbits",
-          "calls": 483,
+          "calls": 484,
           "reason": "Binary bit packing is persistent-storage preparation, not floating-point arithmetic.",
           "variables": {
-            "packed_elements": 12364800
+            "packed_elements": 12390400
           }
         },
         {
           "name": "uint8_one_hot_encode",
-          "calls": 483,
+          "calls": 484,
           "reason": "One-hot allocation and indexed assignment are non-floating-point storage work.",
           "variables": {
             "classes": 20
@@ -193,15 +174,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 10143,
+          "calls": 10164,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 259660800
+            "unpacked_elements": 260198400
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 10143,
+          "calls": 10164,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -225,15 +206,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 13524,
+          "calls": 13545,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 346214400
+            "unpacked_elements": 346752000
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 13524,
+          "calls": 13545,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -257,15 +238,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 16884,
+          "calls": 16905,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 432230400
+            "unpacked_elements": 432768000
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 16884,
+          "calls": 16905,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -289,15 +270,47 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 20265,
+          "calls": 20286,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 518784000
+            "unpacked_elements": 519321600
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 20265,
+          "calls": 20286,
+          "reason": "One-hot comparison and index recovery are non-floating-point work.",
+          "variables": {
+            "classes": 20
+          }
+        },
+        {
+          "name": "numpy.packbits",
+          "calls": 161,
+          "reason": "Binary bit packing is persistent-storage preparation, not floating-point arithmetic.",
+          "variables": {
+            "packed_elements": 4121600
+          }
+        },
+        {
+          "name": "uint8_one_hot_encode",
+          "calls": 161,
+          "reason": "One-hot allocation and indexed assignment are non-floating-point storage work.",
+          "variables": {
+            "classes": 20
+          }
+        },
+        {
+          "name": "numpy.unpackbits",
+          "calls": 23667,
+          "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
+          "variables": {
+            "unpacked_elements": 605875200
+          }
+        },
+        {
+          "name": "uint8_one_hot_decode",
+          "calls": 23667,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -321,15 +334,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 23646,
+          "calls": 27048,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 605337600
+            "unpacked_elements": 692428800
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 23646,
+          "calls": 27048,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -353,15 +366,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 27006,
+          "calls": 30408,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 691353600
+            "unpacked_elements": 778444800
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 27006,
+          "calls": 30408,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -385,15 +398,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 30387,
+          "calls": 33789,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 777907200
+            "unpacked_elements": 864998400
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 30387,
+          "calls": 33789,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -417,47 +430,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 33768,
+          "calls": 37170,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 864460800
+            "unpacked_elements": 951552000
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 33768,
-          "reason": "One-hot comparison and index recovery are non-floating-point work.",
-          "variables": {
-            "classes": 20
-          }
-        },
-        {
-          "name": "numpy.packbits",
-          "calls": 161,
-          "reason": "Binary bit packing is persistent-storage preparation, not floating-point arithmetic.",
-          "variables": {
-            "packed_elements": 4121600
-          }
-        },
-        {
-          "name": "uint8_one_hot_encode",
-          "calls": 161,
-          "reason": "One-hot allocation and indexed assignment are non-floating-point storage work.",
-          "variables": {
-            "classes": 20
-          }
-        },
-        {
-          "name": "numpy.unpackbits",
-          "calls": 37149,
-          "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
-          "variables": {
-            "unpacked_elements": 951014400
-          }
-        },
-        {
-          "name": "uint8_one_hot_decode",
-          "calls": 37149,
+          "calls": 37170,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -481,15 +462,15 @@
         },
         {
           "name": "numpy.unpackbits",
-          "calls": 40436,
+          "calls": 40456,
           "reason": "Replay bit unpacking and dtype materialization are non-floating-point work.",
           "variables": {
-            "unpacked_elements": 1035161600
+            "unpacked_elements": 1035673600
           }
         },
         {
           "name": "uint8_one_hot_decode",
-          "calls": 40436,
+          "calls": 40456,
           "reason": "One-hot comparison and index recovery are non-floating-point work.",
           "variables": {
             "classes": 20
@@ -720,7 +701,7 @@
           }
         }
       ],
-      "total_recorded_events": 10290733,
+      "total_recorded_events": 10292724,
       "policy": "Only comparisons, indexing, shape/view, data movement, integer/bit operations and other explicitly documented non-floating-point operations are listed here; unknown computational operators still abort the run."
     }
   },
@@ -735,15 +716,15 @@
     "label_encoding": "uint8_one_hot"
   },
   "inference": {
-    "final_latency_ms_per_sample": 5.165990713204417
+    "final_latency_ms_per_sample": 5.363266637720819
   },
   "working_memory_diagnostic": {
-    "native_peak_allocated_gpu_memory_mib": 68671.05419921875,
+    "native_peak_allocated_gpu_memory_mib": 69385.72021484375,
     "note": "Transient working memory; excluded from persistent storage."
   },
   "selection": {
     "mode": "last_epoch_train_mean",
-    "loss": 1.48539095331875,
+    "loss": 2.454037731786385,
     "loss_eval_flops": 0
   },
   "config": {
@@ -805,8 +786,8 @@
       "attention_heads": 8,
       "init_epochs": 20,
       "inc_epochs": 20,
-      "init_lr": 0.01,
-      "inc_lr": 0.01,
+      "init_lr": 0.1,
+      "inc_lr": 0.1,
       "init_weight_decay": 0.0005,
       "inc_weight_decay": 0.0005,
       "init_milestones": [
@@ -838,7 +819,7 @@
     },
     "training": {
       "optimizer": "SGD",
-      "learning_rate": 0.01,
+      "learning_rate": 0.1,
       "momentum": 0.9,
       "weight_decay": 0.0005,
       "foreach": false,
@@ -903,60 +884,60 @@
     "order_registry_source": "cil_experiments/order_seed_registry.py",
     "selected_task_groups": [
       [
-        7,
-        18,
-        12
-      ],
-      [
-        1
-      ],
-      [
-        11
+        16,
+        19,
+        0
       ],
       [
         9
       ],
       [
-        13
-      ],
-      [
         8
-      ],
-      [
-        2
       ],
       [
         17
       ],
       [
-        10
+        1
       ],
       [
-        6
+        12
       ],
       [
-        4
+        11
       ],
       [
         5
       ],
       [
+        10
+      ],
+      [
+        4
+      ],
+      [
+        18
+      ],
+      [
+        13
+      ],
+      [
         15
       ],
       [
-        3
-      ],
-      [
-        19
-      ],
-      [
-        0
+        7
       ],
       [
         14
       ],
       [
-        16
+        6
+      ],
+      [
+        3
+      ],
+      [
+        2
       ]
     ],
     "dataset_orders": {
@@ -1147,7 +1128,7 @@
       "registry_locked": true,
       "resolved": {
         "optimizer": "SGD",
-        "learning_rate": 0.01,
+        "learning_rate": 0.1,
         "momentum": 0.9,
         "weight_decay": 0.0005,
         "foreach": false,
@@ -1170,8 +1151,8 @@
         "attention_heads": 8,
         "init_epochs": 20,
         "inc_epochs": 20,
-        "init_lr": 0.01,
-        "inc_lr": 0.01,
+        "init_lr": 0.1,
+        "inc_lr": 0.1,
         "init_weight_decay": 0.0005,
         "inc_weight_decay": 0.0005,
         "init_milestones": [
@@ -1188,7 +1169,7 @@
       },
       "explicit_diagnostic_overrides": {
         "optimizer": "SGD",
-        "learning_rate": 0.01,
+        "learning_rate": 0.1,
         "momentum": 0.9,
         "weight_decay": 0.0005,
         "foreach": false,
@@ -1211,8 +1192,8 @@
         "attention_heads": 8,
         "init_epochs": 20,
         "inc_epochs": 20,
-        "init_lr": 0.01,
-        "inc_lr": 0.01,
+        "init_lr": 0.1,
+        "inc_lr": 0.1,
         "init_weight_decay": 0.0005,
         "inc_weight_decay": 0.0005,
         "init_milestones": [
@@ -1236,7 +1217,8 @@
     },
     "summary_null_reasons": {
       "training_runtime.total_gpu_ms": "null only for CPU execution.",
-      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution."
+      "working_memory_diagnostic.native_peak_allocated_gpu_memory_mib": "null only for CPU execution.",
+      "cil_performance.intransigence": "Disabled for search/joint learning or explicitly skipped for this formal run."
     },
     "software": {
       "python": "3.10.20",
@@ -1247,8 +1229,8 @@
     "exp_name": "spike-all",
     "data_role": "formal",
     "intransigence": {
-      "automatic_fill_enabled": true,
-      "joint_json_path": "/nobackup/proj/disk/naiss2026-4-902/shared/yizhil/Avalanche/avalanche-master/joint_result_spike-all/tagfex/order1/joint_spike_tagfex__order-1__seed-063.json",
+      "automatic_fill_enabled": false,
+      "joint_summary_path": null,
       "pending_results_are_formal_aggregation_eligible": false
     }
   }
