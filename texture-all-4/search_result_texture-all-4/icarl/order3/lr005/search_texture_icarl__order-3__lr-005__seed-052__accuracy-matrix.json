@@ -1,0 +1,45 @@
+{
+  "dataset": "texture",
+  "method": "icarl",
+  "backbone_id": "resnet18_cifar",
+  "input_view_id": "texture_stored_rgb_image_v1",
+  "order_id": 3,
+  "seed": 52,
+  "exp_name": "texture-all-4",
+  "data_role": "formal",
+  "tasks": 4,
+  "orientation": "row=train experience end; column=evaluated test experience",
+  "upper_triangle": "null because the corresponding class experience had not been learned yet",
+  "test_samples_per_task": [
+    61,
+    57,
+    59,
+    63
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      0.9672131147540983,
+      null,
+      null,
+      null
+    ],
+    [
+      0.8360655737704918,
+      0.8596491228070176,
+      null,
+      null
+    ],
+    [
+      0.7377049180327869,
+      0.6491228070175439,
+      0.9830508474576272,
+      null
+    ],
+    [
+      0.5409836065573771,
+      0.631578947368421,
+      1.0,
+      0.9682539682539683
+    ]
+  ]
+}

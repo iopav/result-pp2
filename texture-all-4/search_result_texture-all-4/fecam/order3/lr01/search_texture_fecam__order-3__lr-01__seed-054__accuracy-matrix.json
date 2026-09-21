@@ -1,0 +1,45 @@
+{
+  "dataset": "texture",
+  "method": "fecam",
+  "backbone_id": "resnet18_cifar",
+  "input_view_id": "texture_stored_rgb_image_v1",
+  "order_id": 3,
+  "seed": 54,
+  "exp_name": "texture-all-4",
+  "data_role": "formal",
+  "tasks": 4,
+  "orientation": "row=train experience end; column=evaluated test experience",
+  "upper_triangle": "null because the corresponding class experience had not been learned yet",
+  "test_samples_per_task": [
+    61,
+    57,
+    59,
+    63
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      1.0,
+      null,
+      null,
+      null
+    ],
+    [
+      0.8360655737704918,
+      0.7543859649122807,
+      null,
+      null
+    ],
+    [
+      0.8360655737704918,
+      0.7368421052631579,
+      1.0,
+      null
+    ],
+    [
+      0.8360655737704918,
+      0.7017543859649122,
+      0.9152542372881356,
+      0.6507936507936508
+    ]
+  ]
+}

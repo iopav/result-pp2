@@ -1,0 +1,45 @@
+{
+  "dataset": "texture",
+  "method": "er_ace",
+  "backbone_id": "resnet18_cifar",
+  "input_view_id": "texture_stored_rgb_image_v1",
+  "order_id": 3,
+  "seed": 52,
+  "exp_name": "texture-all-4",
+  "data_role": "formal",
+  "tasks": 4,
+  "orientation": "row=train experience end; column=evaluated test experience",
+  "upper_triangle": "null because the corresponding class experience had not been learned yet",
+  "test_samples_per_task": [
+    61,
+    57,
+    59,
+    63
+  ],
+  "accuracy_matrix_lower_triangular": [
+    [
+      0.7049180327868853,
+      null,
+      null,
+      null
+    ],
+    [
+      1.0,
+      0.9298245614035088,
+      null,
+      null
+    ],
+    [
+      0.9836065573770492,
+      0.6140350877192983,
+      0.7796610169491526,
+      null
+    ],
+    [
+      0.9180327868852459,
+      0.8421052631578947,
+      0.7966101694915254,
+      0.9523809523809523
+    ]
+  ]
+}
